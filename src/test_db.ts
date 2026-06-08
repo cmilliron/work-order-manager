@@ -31,5 +31,4 @@ async function main() {
   await db.delete(usersTable).where(eq(usersTable.email, user.email));
   console.log("User deleted!");
 }
-
 main();
