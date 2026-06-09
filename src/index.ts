@@ -1,17 +1,17 @@
 import { drizzle } from "drizzle-orm/libsql";
 import { eq } from "drizzle-orm";
-import { usersTable } from "./db/schema";
+import { users } from "./db/schema/tenants";
 import { db } from "./db";
 
 async function main() {
-  const user: typeof usersTable.$inferInsert = {
+  const user: typeof users.$inferInsert = {
     name: "John",
     age: 30,
     email: "john@example.com",
   };
-  await db.insert(usersTable).values(user);
+  await db.insert(users).values(user);
   console.log("New user created!");
-  const users = await db.select().from(usersTable);
+  const users = await db.select().from(users);
   console.log("Getting all users from the database: ", users);
   /*
   const users: {
@@ -22,13 +22,13 @@ async function main() {
   }[]
   */
   await db
-    .update(usersTable)
+    .update(users)
     .set({
       age: 31,
     })
-    .where(eq(usersTable.email, user.email));
+    .where(eq(users.email, user.email));
   console.log("User info updated!");
-  await db.delete(usersTable).where(eq(usersTable.email, user.email));
+  await db.delete(users).where(eq(users.email, user.email));
   console.log("User deleted!");
 }
 
