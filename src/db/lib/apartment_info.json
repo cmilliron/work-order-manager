@@ -1,0 +1,650 @@
+[
+  {
+    "address": "1062 Rockway Dr, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1062_rockway_a",
+    "rent": "660"
+  },
+  {
+    "address": "1062 Rockway Dr, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1062_rockway_b",
+    "rent": "650"
+  },
+  {
+    "address": "1080 Rockway Dr, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1080_rockway_a",
+    "rent": "650"
+  },
+  {
+    "address": "1080 Rockway Dr, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1080_rockway_b",
+    "rent": "650"
+  },
+  {
+    "address": "1098 Rockway Dr, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1098_rockway_a",
+    "rent": "700"
+  },
+  {
+    "address": "1098 Rockway Dr, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1098_rockway_b",
+    "rent": "750"
+  },
+  {
+    "address": "1114 Rockway Dr, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1114_rockway_a",
+    "rent": "800"
+  },
+  {
+    "address": "1114 Rockway Dr, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1114_rockway_b",
+    "rent": "800"
+  },
+  {
+    "address": "1136 Rockway Dr, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1136_rockway_a",
+    "rent": "700"
+  },
+  {
+    "address": "1136 Rockway Dr, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1136_rockway_b",
+    "rent": "700"
+  },
+  {
+    "address": "1158 Rockway Dr, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1158_rockway_a",
+    "rent": "660"
+  },
+  {
+    "address": "1158 Rockway Dr, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1158_rockway_b",
+    "rent": "650"
+  },
+  {
+    "address": "1182 Rockway Dr, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1182_rockway_a",
+    "rent": "800"
+  },
+  {
+    "address": "1182 Rockway Dr, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "1182_rockway_b",
+    "rent": "680"
+  },
+  {
+    "address": "120 Zach Circle, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "120_zach_a",
+    "rent": "650"
+  },
+  {
+    "address": "120 Zach Circle, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "120_zach_b",
+    "rent": "800"
+  },
+  {
+    "address": "122 Zach Circle, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "122_zach_a",
+    "rent": "800"
+  },
+  {
+    "address": "122 Zach Circle, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "122_zach_b",
+    "rent": "700"
+  },
+  {
+    "address": "124 Zach Circle, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "124_zach_a",
+    "rent": "650"
+  },
+  {
+    "address": "124 Zach Circle, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "124_zach_b",
+    "rent": "300"
+  },
+  {
+    "address": "126 Zach Circle, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "126_zach_a",
+    "rent": "680"
+  },
+  {
+    "address": "126 Zach Circle, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "126_zach_b",
+    "rent": "450"
+  },
+  {
+    "address": "128 Zach Circle, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "128_zach_a",
+    "rent": "700"
+  },
+  {
+    "address": "128 Zach Circle, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "128_zach_b",
+    "rent": "900"
+  },
+  {
+    "address": "130 Zach Circle, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "130_zach_a",
+    "rent": "750"
+  },
+  {
+    "address": "130 Zach Circle, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "130_zach_b",
+    "rent": "750"
+  },
+  {
+    "address": "7328 S Hwy 150, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "150_a",
+    "rent": "800"
+  },
+  {
+    "address": "7328 S Hwy 150, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "150_b",
+    "rent": "950"
+  },
+  {
+    "address": "165 April Lane, Apt L",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "april_l",
+    "rent": "620"
+  },
+  {
+    "address": "165 April Lane, Apt M",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "april_m",
+    "rent": "750"
+  },
+  {
+    "address": "175 April Lane, Apt N",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "april_n",
+    "rent": "800"
+  },
+  {
+    "address": "175 April Lane, Apt O",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "april_o",
+    "rent": "700"
+  },
+  {
+    "address": "195 April Lane, Apt P",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "april_p",
+    "rent": "660"
+  },
+  {
+    "address": "195 April Lane, Apt Q",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "april_q",
+    "rent": "660"
+  },
+  {
+    "address": "205 April Lane, Apt R",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "april_r",
+    "rent": "660"
+  },
+  {
+    "address": "205 April Lane, Apt S",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "april_s",
+    "rent": "650"
+  },
+  {
+    "address": "210 April Lane, Apt T",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "april_t",
+    "rent": "750"
+  },
+  {
+    "address": "210 April Lane, Apt U",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "april_u",
+    "rent": "750"
+  },
+  {
+    "address": "245 Heather Cir, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "heather_a",
+    "rent": "750"
+  },
+  {
+    "address": "245 Heather Cir, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "heather_b",
+    "rent": "660"
+  },
+  {
+    "address": "261 Heather Cir, Apt C",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "heather_c",
+    "rent": "800"
+  },
+  {
+    "address": "261 Heather Cir, Apt D",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "heather_d",
+    "rent": "850"
+  },
+  {
+    "address": "275 Heather Cir, Apt E",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "heather_e",
+    "rent": "700"
+  },
+  {
+    "address": "275 Heather Cir, Apt F",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "heather_f",
+    "rent": "660"
+  },
+  {
+    "address": "272 Heather Cir, Apt G",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "heather_g",
+    "rent": "750"
+  },
+  {
+    "address": "272 Heather Cir, Apt H",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "heather_h",
+    "rent": "650"
+  },
+  {
+    "address": "256 Heather Cir, Apt J",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "heather_j",
+    "rent": "650"
+  },
+  {
+    "address": "256 Heather Cir, Apt K",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "heather_k",
+    "rent": "650"
+  },
+  {
+    "address": "3821 West New Hwy 64, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "new64_b",
+    "rent": "850"
+  },
+  {
+    "address": "3821 West New Hwy 64, Apt  A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "new64_a",
+    "rent": "750"
+  },
+  {
+    "address": "2094 W Old US Hwy 64, Apt A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "old64_a",
+    "rent": "650"
+  },
+  {
+    "address": "2094 W Old US Hwy 64, Apt B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "old64_b",
+    "rent": "620"
+  },
+  {
+    "address": "2096 W Old US Hwy 64, Apt C",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "old64_c",
+    "rent": "800"
+  },
+  {
+    "address": "2098 W Old US Hwy 64, Apt E",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "old64_e",
+    "rent": "500"
+  },
+  {
+    "address": "2098 W Old US Hwy 64, Apt F",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "old64_f",
+    "rent": "500"
+  },
+  {
+    "address": "505 Raymond Lanier Rd, Apt  A",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "raymondlanier_a",
+    "rent": "650"
+  },
+  {
+    "address": "505 Raymond Lanier Rd, Apt  B",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "raymondlanier_b",
+    "rent": "650"
+  },
+  {
+    "address": "233 Stanley Ln, Apt E",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "stanley_e",
+    "rent": "750"
+  },
+  {
+    "address": "233 Stanley Ln, Apt F",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "stanley_f",
+    "rent": "660"
+  },
+  {
+    "address": "235 Stanley Ln, Apt G",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "stanley_g",
+    "rent": "900"
+  },
+  {
+    "address": "235 Stanley Ln, Apt H",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "stanley_h",
+    "rent": "650"
+  },
+  {
+    "address": "234 Stanley Ln, Apt J",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "stanley_j",
+    "rent": "850"
+  },
+  {
+    "address": "234 Stanley Ln, Apt K",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "stanley_k",
+    "rent": "700"
+  },
+  {
+    "address": "120 Travis Ln, Apt 1",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "travis_1",
+    "rent": "620"
+  },
+  {
+    "address": "120 Travis Ln, Apt 2",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "travis_2",
+    "rent": "900"
+  },
+  {
+    "address": "138 Travis Ln, Apt 3",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "travis_3",
+    "rent": "660"
+  },
+  {
+    "address": "138 Travis Ln, Apt 4",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "travis_4",
+    "rent": "800"
+  },
+  {
+    "address": "152 Travis Ln, Apt 5",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "travis_5",
+    "rent": "660"
+  },
+  {
+    "address": "152 Travis Ln, Apt 6",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "travis_6",
+    "rent": "600"
+  },
+  {
+    "address": "170 Travis Ln, Apt 7",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "travis_7",
+    "rent": "800"
+  },
+  {
+    "address": "170 Travis Ln, Apt 8",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "travis_8",
+    "rent": "650"
+  },
+  {
+    "address": "188 Travis Ln, Apt 9",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "travis_9",
+    "rent": "700"
+  },
+  {
+    "address": "188 Travis Ln, Apt 10",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "travis_10",
+    "rent": "650"
+  },
+  {
+    "address": "206 Travis Ln, Apt 11",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "travis_11",
+    "rent": "400"
+  },
+  {
+    "address": "206 Travis Ln, Apt 12",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "travis_12",
+    "rent": "500"
+  },
+  {
+    "address": "3821 West New Hwy 64, Apt C",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "new64_c",
+    "rent": "850"
+  },
+  {
+    "address": "3821 West New Hwy 64, Apt D",
+    "city": "Lexington",
+    "state": "NC",
+    "zip": "27295",
+    "slug": "new64_d",
+    "rent": "800"
+  },
+  {
+    "address": "596 Holly Grove Rd, Apt A",
+    "city": "Lexington",
+    "state": "NC ",
+    "zip": "27292",
+    "slug": "holly_grove_a",
+    "rent": "600"
+  },
+  {
+    "address": "597 Holly Grove Rd, Apt B",
+    "city": "Lexington",
+    "state": "NC ",
+    "zip": "27293",
+    "slug": "holly_grove_b",
+    "rent": "650"
+  },
+  {
+    "address": "598 Holly Grove Rd, Apt C",
+    "city": "Lexington",
+    "state": "NC ",
+    "zip": "27294",
+    "slug": "holly_grove_c",
+    "rent": "650"
+  },
+  {
+    "address": "599 Holly Grove Rd, Apt D",
+    "city": "Lexington",
+    "state": "NC ",
+    "zip": "27295",
+    "slug": "holly_grove_d",
+    "rent": "650"
+  }
+]

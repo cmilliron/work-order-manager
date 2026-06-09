@@ -1,6 +1,6 @@
 {
   "name": "work-order-manager",
-  "type": "commonjs",
+  "type": "module",
   "version": "0.0.1",
   "description": "A work order manager",
   "license": "MIT",
@@ -10,16 +10,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsx ./src/index.ts",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "tsx src/migrate.ts"
+    "db:migrate": "drizzle-kit migrate"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^25.6.2",
     "drizzle-kit": "^0.31.10",
-    "tsx": "^4.21.0",
+    "tsx": "^4.22.4",
     "typescript": "^6.0.3"
   },
   "dependencies": {
-    "@libsql/client": "^0.17.3",
+    "better-sqlite3": "^12.10.0",
     "dotenv": "^17.4.2",
     "drizzle-orm": "^0.45.2"
   }

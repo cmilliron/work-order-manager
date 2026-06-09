@@ -1,6 +1,6 @@
 import { drizzle } from "drizzle-orm/libsql";
 import { eq } from "drizzle-orm";
-import { users } from "./db/schema/tenants";
+import { users } from "./db/schemas/tenants";
 import { db } from "./db";
 
 async function main() {
