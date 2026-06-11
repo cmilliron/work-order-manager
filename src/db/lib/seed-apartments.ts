@@ -1,7 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
 import { createApartment } from "../queries/apartments.js";
-import { typingsToAwsTypeHint } from "drizzle-orm/aws-data-api/common";
 
 // 1. Define the shape of your JSON data
 interface ApartmentFromJSON {
@@ -15,7 +14,7 @@ interface ApartmentFromJSON {
 
 function readApartmentFile(): ApartmentFromJSON[] | null {
   try {
-    const filePath = "./src/db/lib/apartment_info.json";
+    const filePath = "./src/db/lib/seed-data/apartment_info.json";
 
     const rawData = fs.readFileSync(filePath, "utf-8");
 
