@@ -1,5 +1,10 @@
 import { int, sqliteTable, text } from "drizzle-orm/sqlite-core";
-import { InferSelectModel, InferInsertModel, sql } from "drizzle-orm";
+import {
+  InferSelectModel,
+  InferInsertModel,
+  sql,
+  relations,
+} from "drizzle-orm";
 
 export enum ApartmentStatus {
   Empty,
@@ -60,6 +65,13 @@ export const tenants = sqliteTable("tenants", {
   phone2: text("phone_2"),
   ...timestamps,
 });
+
+export const apartmentsRelations = relations(apartments, ({ one }) => ({
+  tenant: one(tenants, {
+    fields: [apartments.tenantId],
+    references: [tenants.id],
+  }),
+}));
 
 export type Tenant = InferSelectModel<typeof tenants>;
 export type NewTenant = InferInsertModel<typeof tenants>;

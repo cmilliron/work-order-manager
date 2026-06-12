@@ -3,9 +3,16 @@ import {
   Apartment,
   apartments,
   ApartmentStatus,
+  Tenant,
+  tenants,
 } from "../schema.js";
 import { db } from "../index.js";
 import { eq } from "drizzle-orm";
+
+export type ApartmentWithUserTenant = {
+  apartments: Apartment;
+  tenants: Tenant | null;
+};
 
 // Create
 export async function createApartment(
@@ -29,6 +36,17 @@ export async function getApartmentBySlug(slug: string): Promise<Apartment> {
 export async function getAllApartments(): Promise<Apartment[]> {
   const results = await db.select().from(apartments);
   return results;
+}
+
+export async function getApartmentsWithTenents(): Promise<
+  ApartmentWithUserTenant[]
+> {
+  const rows = await db
+    .select()
+    .from(apartments)
+    .leftJoin(tenants, eq(apartments.tenantId, tenants.id));
+
+  return rows;
 }
 
 // updates

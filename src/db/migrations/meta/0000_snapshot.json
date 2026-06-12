@@ -1,7 +1,7 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "9647468c-5c95-4dbe-b2cd-d7b94c7e4bfe",
+  "id": "0dd6918c-928b-4cb0-9c68-76e1b24f8d1c",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "apartments": {
@@ -64,38 +64,38 @@
           "autoincrement": false,
           "default": 0
         },
-        "tenent_id": {
-          "name": "tenent_id",
-          "type": "text",
+        "tenant_id": {
+          "name": "tenant_id",
+          "type": "integer",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false
-        },
-        "updated_at": {
-          "name": "updated_at",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false,
-          "default": "(CURRENT_TIMESTAMP)"
         },
         "created_at": {
           "name": "created_at",
           "type": "text",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "(CURRENT_TIMESTAMP)"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
           "autoincrement": false,
           "default": "(CURRENT_TIMESTAMP)"
         }
       },
       "indexes": {},
       "foreignKeys": {
-        "apartments_tenent_id_tenants_id_fk": {
-          "name": "apartments_tenent_id_tenants_id_fk",
+        "apartments_tenant_id_tenants_id_fk": {
+          "name": "apartments_tenant_id_tenants_id_fk",
           "tableFrom": "apartments",
           "tableTo": "tenants",
           "columnsFrom": [
-            "tenent_id"
+            "tenant_id"
           ],
           "columnsTo": [
             "id"
@@ -118,18 +118,11 @@
           "notNull": true,
           "autoincrement": true
         },
-        "first_name": {
-          "name": "first_name",
+        "name": {
+          "name": "name",
           "type": "text",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "last_name": {
-          "name": "last_name",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
           "autoincrement": false
         },
         "email": {
@@ -139,46 +132,38 @@
           "notNull": false,
           "autoincrement": false
         },
-        "phone": {
-          "name": "phone",
+        "phone_1": {
+          "name": "phone_1",
           "type": "text",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false
         },
-        "updated_at": {
-          "name": "updated_at",
+        "phone_2": {
+          "name": "phone_2",
           "type": "text",
           "primaryKey": false,
           "notNull": false,
-          "autoincrement": false,
-          "default": "(CURRENT_TIMESTAMP)"
+          "autoincrement": false
         },
         "created_at": {
           "name": "created_at",
           "type": "text",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "(CURRENT_TIMESTAMP)"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
           "autoincrement": false,
           "default": "(CURRENT_TIMESTAMP)"
         }
       },
-      "indexes": {
-        "tenants_email_unique": {
-          "name": "tenants_email_unique",
-          "columns": [
-            "email"
-          ],
-          "isUnique": true
-        },
-        "tenants_phone_unique": {
-          "name": "tenants_phone_unique",
-          "columns": [
-            "phone"
-          ],
-          "isUnique": true
-        }
-      },
+      "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
@@ -203,39 +188,39 @@
         },
         "status": {
           "name": "status",
-          "type": "text",
+          "type": "integer",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false,
-          "default": "'pending'"
+          "default": 0
         },
         "apartment_id": {
           "name": "apartment_id",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "tenent_id": {
-          "name": "tenent_id",
-          "type": "text",
+          "type": "integer",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false
         },
-        "updated_at": {
-          "name": "updated_at",
-          "type": "text",
+        "tenant_id": {
+          "name": "tenant_id",
+          "type": "integer",
           "primaryKey": false,
           "notNull": false,
-          "autoincrement": false,
-          "default": "(CURRENT_TIMESTAMP)"
+          "autoincrement": false
         },
         "created_at": {
           "name": "created_at",
           "type": "text",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "(CURRENT_TIMESTAMP)"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
           "autoincrement": false,
           "default": "(CURRENT_TIMESTAMP)"
         }
@@ -252,15 +237,15 @@
           "columnsTo": [
             "id"
           ],
-          "onDelete": "cascade",
+          "onDelete": "set null",
           "onUpdate": "no action"
         },
-        "work_orders_tenent_id_tenants_id_fk": {
-          "name": "work_orders_tenent_id_tenants_id_fk",
+        "work_orders_tenant_id_tenants_id_fk": {
+          "name": "work_orders_tenant_id_tenants_id_fk",
           "tableFrom": "work_orders",
           "tableTo": "tenants",
           "columnsFrom": [
-            "tenent_id"
+            "tenant_id"
           ],
           "columnsTo": [
             "id"

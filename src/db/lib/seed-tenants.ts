@@ -67,7 +67,7 @@ async function storeTenantData() {
   const tenantMap = createTenantSlugMap(tenantSlugs);
   const cleanTenants = processTenantInfo(tenantInfo);
   console.log(cleanTenants[0]);
-  for (let tenant of cleanTenants.slice(0, 3)) {
+  for (let tenant of cleanTenants) {
     const newTenant: NewTenant = {
       name: tenant.name,
       phone1: tenant.phone1,

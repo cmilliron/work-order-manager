@@ -1,4 +1,11 @@
+# JS/TS and Node files
 node_modules/
-.env
+
+# Database
 *.db
-src/db/seed-data/
+
+# Seed Data
+src/db/lib/seed-data/
+
+# Local Secrets
+.env
