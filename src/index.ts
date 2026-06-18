@@ -1,6 +1,12 @@
 // import { createInterface, Interface } from "readline";
 import * as p from "@clack/prompts";
-import { getApartmentsWithTenents } from "./db/queries/apartments.js";
+import {
+  ApartmentWithUserTenant,
+  getApartmentsWithTenents,
+} from "./db/queries/apartments.js";
+import { tenants } from "./db/schema.js";
+import { SocketAddress } from "node:net";
+import { printOutput } from "./cli/utils/output.js";
 
 async function main() {
   const search = await p.text({
@@ -12,19 +18,37 @@ async function main() {
   //     output: process.stdout,
   //     prompt: "Let's add a work order (Search for Name): ",
   //   });
-  const results = await getApartmentsWithTenents();
+  const apartments = await getApartmentsWithTenents();
   // console.log(results[0]);
   //   r.prompt();
   //   r.on("line", (input) => {});
   // }
-  const options = results.filter((r) => {
+  const options = apartments.filter((r) => {
     return (
-      r.apartments.slug.toLocaleLowerCase().includes(search.toString()) ||
-      r.tenants?.name.toLowerCase().includes(search.toString())
+      r.apartments.slug
+        .toLowerCase()
+        .includes(search.toString().toLowerCase()) ||
+      r.tenants?.name.toLowerCase().includes(search.toString().toLowerCase())
     );
   });
 
-  console.log(options);
+  const selectOptions = options.map((o) => {
+    return {
+      value: o,
+      label: `${o.tenants?.name} - ${o.apartments.address}`,
+    };
+  });
+
+  const apartment = await p.select({
+    message: "Pick and apartment",
+    options: selectOptions,
+  });
+
+  const workOrder = await p.text({
+    message: "What is the issue with the apartment: ",
+  });
+
+  printOutput(apartment as ApartmentWithUserTenant, workOrder as string);
 }
 
 main();
