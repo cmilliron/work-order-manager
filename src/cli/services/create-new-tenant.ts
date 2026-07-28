@@ -4,9 +4,10 @@ import {
   ApartmentWithUserTenant,
   getApartmentsWithTenents,
 } from "../../db/queries/apartments.js";
-import { tenants } from "../../db/schema.js";
+import { NewTenant, Tenant, tenants } from "../../db/schema.js";
 import { SocketAddress } from "node:net";
 import { printOutput } from "../utils/output.js";
+import { createTenant } from "../../db/queries/tenants.js";
 
 export async function createNewTenant() {
   const newTenantName = await p.text({
@@ -21,24 +22,26 @@ export async function createNewTenant() {
   const newTenantPhone2 = await p.text({
     message: "Enter the tenant's phone 2: ",
   });
-  // console.log(search);
-  //   const r = createInterface({
-  //     input: process.stdin,
-  //     output: process.stdout,
-  //     prompt: "Let's add a work order (Search for Name): ",
-  //   });
+
+  const newTenant: NewTenant = {
+    name: newTenantName as string,
+    email: newTenantEmail as string,
+    phone1: newTenantPhone1 as string,
+    phone2: newTenantPhone2 as string,
+  };
+
+  const newTenantDb = await createTenant(newTenant);
+
   const apartments = await getApartmentsWithTenents();
-  // console.log(results[0]);
-  //   r.prompt();
-  //   r.on("line", (input) => {});
-  // }
+
+  const search = await p.text({
+    message: "Enter a name or apartement to search: ",
+  });
+
   const options = apartments.filter((r) => {
-    return (
-      r.apartments.slug
-        .toLowerCase()
-        .includes(search.toString().toLowerCase()) ||
-      r.tenants?.name.toLowerCase().includes(search.toString().toLowerCase())
-    );
+    return r.apartments.slug
+      .toLowerCase()
+      .includes(search.toString().toLowerCase());
   });
 
   const selectOptions = options.map((o) => {
