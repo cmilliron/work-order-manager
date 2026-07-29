@@ -1,5 +1,6 @@
 import { Command } from "commander";
 import { makeWorkOrderCommand } from "./commands/work-order.js";
+import { makeAddTenantCommand } from "./commands/add-tenant.js";
 
 export function workeOrderManager() {
   const program = new Command();
@@ -16,6 +17,7 @@ export function workeOrderManager() {
     .option("-p, --pizza-type ", "flavour of pizza");
 
   program.addCommand(makeWorkOrderCommand());
+  program.addCommand(makeAddTenantCommand());
 
   // 3. Parse the arguments
   program.parse(process.argv);

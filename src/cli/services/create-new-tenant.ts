@@ -4,10 +4,9 @@ import {
   ApartmentWithUserTenant,
   getApartmentsWithTenents,
 } from "../../db/queries/apartments.js";
-import { NewTenant, Tenant, tenants } from "../../db/schema.js";
-import { SocketAddress } from "node:net";
-import { printOutput } from "../utils/output.js";
+import { Apartment, NewTenant, Tenant, tenants } from "../../db/schema.js";
 import { createTenant } from "../../db/queries/tenants.js";
+import { addTenantRelationToApartment } from "../../db/queries/apartments.js";
 
 export async function createNewTenant() {
   const newTenantName = await p.text({
@@ -51,14 +50,31 @@ export async function createNewTenant() {
     };
   });
 
-  const apartment = await p.select({
+  const apartment = (await p.select({
     message: "Pick and apartment",
     options: selectOptions,
-  });
+  })) as ApartmentWithUserTenant;
 
-  const workOrder = await p.text({
-    message: "What is the issue with the apartment: ",
-  });
+  const updatedDB = await addTenantRelationToApartment(
+    apartment.apartments.slug,
+    newTenantDb.id,
+  );
 
-  printOutput(apartment as ApartmentWithUserTenant, workOrder as string);
+  printAppartment(updatedDB);
+  printTenant(newTenantDb);
+}
+
+function printAppartment(apartment: Apartment) {
+  console.log("Adress: ", apartment.address);
+  console.log("Rent: ", apartment.rentPrice);
+  console.log("Tenant: ", apartment.tenantId);
+  console.log("Slug: ", apartment.slug);
+}
+
+function printTenant(tenant: Tenant) {
+  console.log("Name: ", tenant.name);
+  console.log("Phone 1: ", tenant.phone1);
+  console.log("Phone 2: ", tenant.phone2);
+  console.log("Email: ", tenant.email);
+  console.log("ID: ", tenant.id);
 }

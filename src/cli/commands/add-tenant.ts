@@ -1,7 +1,7 @@
 import { Command } from "commander";
 import { createNewTenant } from "../services/create-new-tenant.js";
 
-export function addTenant(): Command {
+export function makeAddTenantCommand(): Command {
   return (
     new Command("new-tenant")
       .description("Add new tenant")
