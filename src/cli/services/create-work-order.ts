@@ -49,4 +49,6 @@ export async function createWorkOrder() {
   });
 
   printOutput(apartment as ApartmentWithUserTenant, workOrder as string);
+
+  // Add work order to
 }
